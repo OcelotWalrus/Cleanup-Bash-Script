@@ -1,3 +1,4 @@
+Settings
 Bash_history=Enable
 Temporary_files=Enable
 Discord_cache=Enable
@@ -8,7 +9,7 @@ Firefox_cookies=Disable
 Chrome_cache=Enable
 Chrome_crash_reports=Enable
 Trash=Enable
-System_cache=Enable
-System_logs=Enable
+System_cache=Disable
+System_logs=Disable
 Firefox_history=Disable
 Chrome_history=Disable
