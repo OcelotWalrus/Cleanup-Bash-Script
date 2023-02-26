@@ -117,6 +117,7 @@ fi
 # System logs
 if [ "$settings_line12" == "System_logs=True" ]; then
       echo "Deleting system logs..."
+      sudo rm -r /var/log/*
       sleep 1
 fi
 
