@@ -20,6 +20,8 @@ settings_line9=$(sed -n 9p settings.txt)
 settings_line10=$(sed -n 10p settings.txt)
 settings_line11=$(sed -n 11p settings.txt)
 settings_line12=$(sed -n 12p settings.txt)
+settings_line13=$(sed -n 13p settings.txt)
+settings_line14=$(sed -n 14p settings.txt)
 
 # Cleaning up
 
@@ -115,6 +117,21 @@ fi
 # System logs
 if [ "$settings_line12" == "System_logs=True" ]; then
       echo "Deleting system logs..."
+      sleep 1
+fi
+
+# Firefox history
+if [ "$settings_line13" == "Firefox_history=True" ]; then
+      echo "Deleting firefox history..."
+      rm -r /home/"$user"/.mozilla/firefox/  >&- 2>&-
+      sleep 1
+fi
+
+# Chrome history
+if [ "$settings_line14" == "Chrome_history=True" ]; then
+      echo "Deleting chrome history..."
+      rm -r /home/"$user"/.config/google-chrome/Default/History/  >&- 2>&-
+      rm -r /home/"$user"/.config/chromium/Default/History/ >&- 2>&-
       sleep 1
 fi
 
