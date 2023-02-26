@@ -32,7 +32,7 @@ if [ "$answer" == "n" ]; then
       exit 1
 fi
 
-echo "Note that you can customize directories and files to be removed in the settings"
+echo "Note that you can customize directories and files to be removed in the settings.yaml file and add your own directories in custom_directories.yaml"
 echo "Starting cleaning up system..."
 
 # Removing directories in settings.txt
