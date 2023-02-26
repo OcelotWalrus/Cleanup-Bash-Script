@@ -1,12 +1,13 @@
-Bash_history: True
-Temporary_files: True
-Discord_cache: True
-Dnf_autoremove: True
-Dnf_clean: True
-Firefox_cache: True
-Firefox_cookies: False
-Chrome_cache: True
-Chrome_crash_reports: True
-Trash: True
-System_cache: True
-System_logs: True
+General Settings:
+  Bash_history: True
+  Temporary_files: True
+  Discord_cache: True
+  Dnf_autoremove: True
+  Dnf_clean: True
+  Firefox_cache: True
+  Firefox_cookies: False
+  Chrome_cache: True
+  Chrome_crash_reports: True
+  Trash: True
+  System_cache: True
+  System_logs: True
